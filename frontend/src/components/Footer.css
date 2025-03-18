@@ -1,0 +1,99 @@
+.footer {
+  width: 100%;
+  background-color: #000000;
+  padding: 1rem 0;
+  z-index: 10;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3), 
+              0 -8px 30px rgba(0, 0, 0, 0.2);
+  height: 60px;
+  margin-top: auto;
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.25rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.team-info {
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.team-info p {
+  margin: 0;
+}
+
+.team-members {
+  color: #e0e0e0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.team-members:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Ensure the Botpress chat widget doesn't overlap with the footer */
+#bp-web-widget-container {
+  bottom: 70px !important;
+  right: 20px !important;
+  position: fixed !important;
+  z-index: 20;
+}
+
+/* Add significant bottom margin to prevent footer overlap */
+.note-container, 
+.note-form,
+.notes-grid {
+  margin-bottom: 80px !important;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    height: 50px;
+    padding: 0.75rem 0;
+  }
+
+  .footer-content {
+    padding: 0.25rem 1rem;
+  }
+
+  .team-info {
+    font-size: 0.95rem;
+  }
+
+  /* Increase spacing for mobile view */
+  .note-container, 
+  .note-form,
+  .notes-grid {
+    margin-bottom: 60px !important;
+  }
+
+  #bp-web-widget-container {
+    bottom: 60px !important;
+    right: 10px !important;
+  }
+} 

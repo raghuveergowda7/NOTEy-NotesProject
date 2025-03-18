@@ -1,0 +1,155 @@
+.note-detail {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.note-header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.note-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-edit {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #45a049;
+}
+
+.btn-delete:hover {
+  background-color: #da190b;
+}
+
+.note-content {
+  margin-bottom: 2rem;
+}
+
+.rich-text-content {
+  line-height: 1.6;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.rich-text-content h1,
+.rich-text-content h2,
+.rich-text-content h3,
+.rich-text-content h4,
+.rich-text-content h5,
+.rich-text-content h6 {
+  margin: 1.5rem 0 1rem;
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.rich-text-content p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.rich-text-content strong {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.rich-text-content em {
+  font-style: italic;
+}
+
+.rich-text-content ul,
+.rich-text-content ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.rich-text-content li {
+  margin-bottom: 0.5rem;
+}
+
+.rich-text-content blockquote {
+  border-left: 4px solid #4a5568;
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  background-color: #f7fafc;
+  color: #4a5568;
+  font-style: italic;
+}
+
+.rich-text-content pre,
+.rich-text-content code {
+  background-color: #f7fafc;
+  border-radius: 4px;
+  padding: 0.2rem 0.4rem;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.rich-text-content pre {
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.rich-text-content a {
+  color: #4299e1;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.rich-text-content a:hover {
+  border-bottom-color: #4299e1;
+}
+
+.rich-text-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note-image,
+.note-drawing {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.note-image img,
+.note-drawing img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} 

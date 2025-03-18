@@ -1,0 +1,85 @@
+.image-upload-container {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.upload-area {
+  border: 2px dashed #667eea;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #f8fafc;
+}
+
+.upload-area.dragging {
+  background: #667eea20;
+  border-color: #5a67d8;
+  transform: scale(1.02);
+}
+
+.upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #4a5568;
+  cursor: pointer;
+}
+
+.upload-icon {
+  font-size: 2rem;
+  color: #667eea;
+}
+
+.file-input {
+  display: none;
+}
+
+.preview-container {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-preview {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.remove-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ff5050;
+  transition: all 0.2s ease;
+}
+
+.remove-button:hover {
+  background: #ff5050;
+  color: white;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .upload-area {
+    padding: 15px;
+  }
+  
+  .upload-icon {
+    font-size: 1.5rem;
+  }
+} 

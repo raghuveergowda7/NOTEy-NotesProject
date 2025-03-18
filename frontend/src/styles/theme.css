@@ -1,0 +1,62 @@
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --border-color: #dee2e6;
+  --accent-color: #0d6efd;
+  --card-bg: #ffffff;
+  --hover-bg: #e9ecef;
+  --input-bg: #ffffff;
+  --input-text: #212529;
+  --button-text: #ffffff;
+  --button-bg: #0d6efd;
+  --button-hover: #0b5ed7;
+}
+
+/* Base styles */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Card styles */
+.card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+/* Input styles */
+input, textarea, select {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border-color: var(--border-color);
+}
+
+/* Button styles */
+.btn {
+  color: var(--button-text);
+  background-color: var(--button-bg);
+  border-color: var(--button-bg);
+}
+
+.btn:hover {
+  background-color: var(--button-hover);
+  border-color: var(--button-hover);
+}
+
+/* Note card hover effect */
+.note-card-hover:hover {
+  background-color: var(--hover-bg);
+}
+
+/* Drawing canvas specific styles */
+.drawing-canvas {
+  background-color: var(--bg-primary);
+  border: 2px solid var(--border-color);
+}
+
+.drawing-toolbar {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+} 
