@@ -9,7 +9,6 @@ A full-stack notes application built with Django and React, featuring rich text 
 - 📸 Image upload support
 - 🎯 Goal timer for productivity
 - 🤖 AI-powered chatbot assistance
-- 🌓 Dark/Light theme support
 - 📱 Responsive design
 
 ## Tech Stack
