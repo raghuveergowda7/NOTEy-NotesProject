@@ -1,4 +1,4 @@
-# Notes Project
+# Notes Project-Notey
 
 A full-stack notes application built with Django and React, featuring rich text editing, drawing capabilities, and goal tracking.
 
